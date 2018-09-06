@@ -1,0 +1,21 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  color:#262626;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+
+}
+
+@media only screen and (min-width: 1200px) {
+	/* Desktop */
+	.App {
+  		font-size: 14px;
+	}
+}

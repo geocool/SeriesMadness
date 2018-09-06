@@ -1,0 +1,52 @@
+.MobileSearchResults {
+	display: block;
+	position: absolute;
+	top:47px;
+	right: 0px;
+	height: 100%;
+	background: #191919;
+	z-index: 2;
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+	color:white;
+	text-align: center;
+
+	transition: width 0.4s ease;
+}
+
+.MobileSearchResults[isopen=true] {
+	width: 100%;
+}
+
+.MobileSearchResults[isopen=false] {
+	width: 0%;
+}
+
+.MobileSearchResults-header {
+	font-size: 21px;
+	margin-top: 70px;
+	margin-bottom: 6px;
+	white-space: nowrap;
+}
+
+.MobileSearchResults-subheader{
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+}
+
+@media only screen and (min-width: 1200px) { 
+	/* Desktop */
+	.MobileSearchResults {
+		display: none;
+	}
+}

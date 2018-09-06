@@ -1,0 +1,122 @@
+.SearchInput {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 70%;
+	height: 24px;
+	border: 0;
+	border-radius: 2px;
+	background-color: #191919;
+
+	order: 4;
+
+	transition: width 0.4s ease;
+	float:right;
+}
+
+.SearchInput[isopen=true] {
+	width: 100%;
+}
+
+.SearchInput[isopen=false] {
+	width: 0%;
+	border: 0;
+}
+
+.SearchInput-input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	border: 0px;
+	padding-left: 12px;
+	vertical-align: top;
+	background: #191919;
+	color:white;
+}
+
+.SearchInput[isopen=false] > .SearchInput-input {
+	display: none;
+}
+
+.SearchInput-input:focus {
+	outline:none;
+}
+
+.SearchInput-button {
+	display: none;
+	width: 40px;
+	height: 100%;
+	border: none;
+	background: white;
+}
+
+.SearchInput-button:hover {
+	background: #e3e1df;
+	cursor: pointer;
+}
+
+.SearchInput-button:focus {
+	outline: none;
+}
+
+.SearchInput-icon {
+	margin-top: 2px;
+	width: 16px;
+	height: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+}
+
+@media only screen and (min-width: 1200px) {
+	/* Desktop*/
+	.SearchInput ,.SearchInput[isopen=true], .SearchInput[isopen=false] {
+		display: inline-block;
+		vertical-align: middle;
+		width: 370px;
+		height: 24px;
+		border: 1px solid white;
+		border-radius: 2px;
+		background-color: white;
+	}
+
+	.Navigation .SearchInput {
+		margin-left: 22px;
+	}
+
+	.SearchInput[isopen=true] .SearchInput-input, .SearchInput[isopen=false] .SearchInput-input{
+		display: inline-block;
+		background: white;
+		color: initial;
+		width: 330px;
+	}
+
+	.SearchInput-input:focus {
+		outline:none;
+	}
+
+	.SearchInput-button {
+		display: inline-block;
+	}
+
+	.SearchInput-button:hover {
+		background: #e3e1df;
+		cursor: pointer;
+	}
+
+	.SearchInput-button:focus {
+		outline: none;
+	}
+
+	.SearchInput-icon {
+		margin-top: 2px;
+		width: 16px;
+		height: 16px;
+	}
+}

@@ -1,0 +1,47 @@
+.MobileMenu {
+	display: block;
+	position: absolute;
+	top:47px;
+	width: 100%;
+	background: #191919;
+	z-index: 2;
+	box-sizing: border-box;
+	margin: 0 auto;
+	
+	transition: height 0.4s ease, padding 0.4s ease;
+	overflow: hidden;
+
+	list-style-type: none;
+}
+
+.MobileMenu[isopen=true] {
+	height: 100%;
+	padding: 20px 50px;
+}
+
+.MobileMenu[isopen=false] {
+	height: 0%;
+	padding: 0 50px;
+}
+
+.MobileMenu-item {
+	color:white;
+	font-size: 16px;
+	border-bottom: 1px solid #484848;
+	padding: 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+}
+
+@media only screen and (min-width: 1200px) { 
+	/* Desktop */
+	.MobileMenu {
+		display: none;
+	}
+}

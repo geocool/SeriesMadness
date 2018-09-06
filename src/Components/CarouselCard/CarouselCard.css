@@ -1,0 +1,128 @@
+.CarouselCard {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0 10px;
+	border:1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+	width: 67vw;
+	height: 40vw;
+}
+
+.CarouselCard-cover {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	right: -9999px;
+	bottom: -9999px;
+	margin: auto;
+	height: 100%;
+}
+
+.CarouselCard-content {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	transition:height 0.4s ease;
+}
+
+.CarouselCard:hover .CarouselCard-content {
+	height: 0px;
+}
+
+.CarouselCard-title {
+	color:white;
+	font-size: 18px;
+	width: 97.5%;
+	margin: 0 auto;
+	font-weight: bold;
+	transition: transform 0.4s ease, font-size 0.4s ease;
+}
+
+.CarouselCard-line {
+	width: 97.5%;
+	height: 2px;
+	background-color:#E80A65;
+	margin: 6px auto;
+}
+
+.slick-current:hover .CarouselCard-title {
+
+}
+
+.CarouselCard-background:after {
+	content: '';
+	background:linear-gradient(to top, #050505, transparent);
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	transition: background-color 0.4s ease;
+}
+
+.slick-current:hover .CarouselCard-background:after {
+	background:rgba(0, 0, 0, 0.2);
+}
+
+.CarouselCard-info {
+	font-size: 12px;
+	color:white;
+	width: 97.5%;
+	margin: 0 auto;
+}
+
+.CarouselCard-followers {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 6px;
+}
+
+.CarouselCard-icon {
+	margin-right: 6px;
+}
+
+.CarouselCard-genre {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 6px;
+}
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+	.CarouselCard {
+		height: 33vw;
+	}
+
+	.CarouselCard-title {
+		font-size: 21px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+	.CarouselCard {
+		width: 62vw;
+		height: 23vw;
+	}
+
+	.CarouselCard-content {
+		height: 70px;
+	}
+
+	.CarouselCard-title {
+		font-size: 24px;
+	}
+
+	.CarouselCard-info {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	/* Desktop */
+	.CarouselCard-title {
+		font-size: 28px;
+	}
+}

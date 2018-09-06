@@ -1,0 +1,41 @@
+.NavigationMenu {
+	display: none;
+}
+
+.NavigationMenu-item {
+	display: inline-block;
+	margin: 0 12px;
+}
+
+.NavigationMenu-item > a, .NavigationMenu-item > a:visited {
+	color:white;
+	text-decoration: none;
+
+	transition: color 0.2s ease;
+	font-size: 14px;
+}
+
+.NavigationMenu-item > a:hover {
+	color:#E80A65;
+
+}
+
+.NavigationMenu-icon {
+	margin-right: 6px;
+}
+
+@media only screen and (min-width: 600px) {
+	/* Tablet Portait*/
+}
+
+@media only screen and (min-width: 900px) {
+	/* Tablet Landscape*/
+}
+
+@media only screen and (min-width: 1200px) { 
+	/* Desktop */
+	.NavigationMenu {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
